@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Long Page Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About Us</a></li>
+                <li><a href="#section3">Services</a></li>
+                <li><a href="#section4">Menu</a></li>
+                <li><a href="#section5">Gallery</a></li>
+                <li><a href="#section6">Testimonials</a></li>
+                <li><a href="#section7">Contact</a></li>
+                <li><a href="#section8">Blog</a></li>
+                <li><a href="#section9">FAQ</a></li>
+                <li><a href="#section10">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h2>Home</h2>
+            <p>Welcome to our long page website. Explore our various sections!</p>
+        </section>
+
+        <section id="section2">
+            <h2>About Us</h2>
+            <p>Information about the company and its mission.</p>
+        </section>
+
+        <section id="section3">
+            <h2>Services</h2>
+            <p>Details about the services we offer.</p>
+        </section>
+
+        <section id="section4">
+            <h2>Menu</h2>
+            <p>List of items available in our menu.</p>
+        </section>
+
+        <section id="section5">
+            <h2>Gallery</h2>
+            <p>A collection of photos and images showcasing our work.</p>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    padding: 20px;
+                }
+                .gallery {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .gallery img {
+                    margin: 10px;
+                    width: 300px; /* Adjust as needed */
+                    height: auto; /* Maintains aspect ratio */
+                    border-radius: 8px; /* Optional styling */
+                }
+            </style>
+        </head>
+        <body>
+        
+            <h1>Image Gallery</h1>
+            <div class="gallery">
+                <img src="images/photo1.jpg" alt="Description of Photo 1">
+                <img src="images/photo2.jpg" alt="Description of Photo 2">
+                <img src="images/photo3.jpg" alt="Description of Photo 3">
+                <img src="images/photo4.jpg" alt="Description of Photo 4">
+                <img src="images/photo5.jpg" alt="Description of Photo 5">
+            </div>
+        </section>
+
+        <section id="section6">
+            <h2>Testimonials</h2>
+            <p>What our customers say about us.</p>
+        </section>
+
+        <section id="section7">
+            <h2>Contact</h2>
+            <p>Get in touch with us!</p>
+        </section>
+
+        <section id="section8">
+            <h2>Blog</h2>
+            <p>Latest news and articles from our team.</p>
+        </section>
+
+        <section id="section9">
+            <h2>FAQ</h2>
+            <p>Frequently asked questions.</p>
+        </section>
+
+        <section id="section10">
+            <h2>Privacy Policy</h2>
+            <p>Information about our privacy practices.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Long Page Website</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
